@@ -2,6 +2,7 @@ html {
     box-sizing: border-box;
 }
 body{
+    /* overflow: hidden; */
     margin: 0;
     padding: 0;
     font-size: 16px;
@@ -61,4 +62,321 @@ a{
     color: #FEFEFE;
     font-size: 18px;
     line-height: 21px;
+}
+
+.car-sharing__top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.car-sharing__info {
+    max-width: 454px;
+    text-align: center;
+}
+.car-sharing__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-family: Fira Sans, sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 57px;
+    color: #1B1818;
+    
+}
+.car-sharing__sub-title {
+    margin: 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #1B1818;
+    margin-bottom: 63px;
+}
+.car-sharing__link {
+    margin: 0;
+    padding: 0;
+    color: #FEFEFE;
+    background-color: #C5AC2D;
+    padding: 15px 20px;
+}
+.slider {
+    width: 600px;
+}
+.slider__item img {
+    width: 600px;
+    height: 450px;
+}
+.slider .slick-dots  {
+    position: absolute;
+    transform: rotate(90deg);
+    top: -40px;
+    right: -45px;
+    bottom: 0px;
+    display: block;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.slick-dots li {
+    margin: 0;
+}
+.slick-dots li button:before {
+    font-size: 9px;
+    line-height: 10px;
+    opacity: 1;
+}
+.slick-dots li.slick-active button:before {
+    font-size: 18px;
+}
+.slider__item p {
+    text-align: center;
+    margin: 0;
+    font-family: Fira Sans, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.car-shering__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 100px;
+
+    /* height: 150px; */
+}
+.advantage-info__list{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.advantage-info__item {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-right: 50px;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    border: 1px solid #332208;
+    transition: all 0.5s ease-out;
+}
+.advantage-info__item:last-child {
+    margin-right: 0px;
+}
+.advantage-info__item:hover {
+    transform: scale(1.2)
+}
+.advantage-info__img {
+padding-top: 20px;
+}
+.advantage-info__description {
+    margin: 0;
+    padding: 10px 10px;
+}
+.advantage-info__left {
+    display: flex;
+}
+.advantage-info__link {
+    color: #1B1818;
+    margin-right: 70px;
+    border-bottom: 1px solid #1B1818;
+}
+
+.rent-terms__wrp {
+    padding: 100px 0px;
+    color: #1B1818;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.rent-terms__info {
+    max-width: 299px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.rent-terms__title {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 30px;
+    font-family: Fira Sans, sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+}
+.rent-terms__text {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+.rent-terms__text:last-child {
+    margin-bottom: 40px;
+}
+.rent-terms__link {
+    max-width: 200px;
+    text-transform: uppercase;
+    color: #FEFEFE;
+    line-height: 19px;
+    padding: 15px 18px;
+    background-color: #C5AC2D;
+}
+.rent-terms__cards {
+    display: flex;
+
+}
+.rent-cards__item {
+    text-align: center;
+    width: 250px;
+    margin-right: 50px;
+    border: 1px solid #332208;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s ease-out;
+}
+.rent-cards__item:last-child {
+    margin-right: 0px;
+}
+.rent-cards__item:hover {
+    transform: scale(1.2)
+}
+.rent-cards__number {
+    margin: -10px 0px 0px 0px;
+    font-family: Fira Sans, sans-serif;
+    font-weight: 500;
+    font-size: 96px;
+    line-height: 115px;
+    color: #1B1818;
+    opacity: 0.05;
+    text-align: center;
+}
+.rent-cards__info {
+    padding: 0px 39px;
+}
+
+.advantages__title {
+    margin: 0;
+    padding: 0;
+    font-family: Fira Sans, sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align-last: left;
+}
+
+.advantages__description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.advantages__list {
+    margin: 0;
+    padding: 0;
+    max-width: 283px;
+    width: 100%;
+
+}
+.advantages__item {
+    text-align: right;
+    list-style: none;
+    position: relative;
+    margin-bottom: 27px;
+    
+}
+.advantages__item:last-child {
+    margin-bottom: 0px;
+}
+.advantages__item::after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    margin-left: 10px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #000;
+}
+.advantages__item:nth-child(1),
+.advantages__item:nth-child(7) {
+    margin-right: 10px;
+}
+.advantages__item:nth-child(2),
+.advantages__item:nth-child(6) {
+    margin-right: 47px;
+}.advantages__item:nth-child(3),
+.advantages__item:nth-child(5) {
+    margin-right: 100px;
+}
+.advantages__item:nth-child(4) {
+    margin-right: 145px;
+}
+
+.advantages__img img{
+    max-width: 600px;
+    max-height: 400px;
+}
+.advantages__info{
+    text-align: right;
+}
+.advantages__text{
+    margin-bottom: 30px;
+}
+.advantages__link {
+    position: relative;
+    margin: 0;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #FEFEFE;
+    width: 200px;
+    height: 50px;
+    background-color: #C5AC2D;
+    padding: 6px 34px;
+}
+.advantages__link::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-image: url('../img/advantages-link.svg');
+    left: 30px;
+    top: 12px;
+}
+.reviews__wrp {
+    padding-top: 100px;
+    padding-bottom: 150px;
+    background-color: #332208;
+    color: #FEFEFE;
+}
+.reviews__title {
+    margin: 0;
+    padding-bottom: 70px;
+    font-family: Fira Sans, sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+}
+.catalog-reviews__item {
+    border: 1px solid #C5AC2D;
+    text-align: center;
+    margin-right: 30px;
+    margin-bottom: 35px;
+}
+.catalog-reviews__item:last-child{
+    margin-right: 0px;
+}
+.catalog-reviews__title {
+    margin: 0;
+    padding-top: 46px;
+    padding-bottom: 47px;
+    font-family: Fira Sans, sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+}
+.catalog-reviews__text {
+    margin: 0;
+    padding: 0px 30px 45px 30px;
+}
+.reviews__catalog .slick-dots li button:before {
+   color:  #C5AC2D;
 }
